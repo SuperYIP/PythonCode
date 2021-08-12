@@ -7,15 +7,19 @@
 # b = 5
 # res = '条件成立' if a > b else '条件不成立'
 # print(res)
+import time
+ticks = time.time()
+print(ticks / 60 / 60 / 24 / 365)
+
 
 # # 日期和时间
-import time
-#
+# import time
+
 # ticks = time.time()  # 从1970年1月1日，到目前为止经历多长时间，秒为单位
 # print(ticks)
 # print(time.localtime())
 # print(time.asctime())
-# print(time.strftime("%Y-%m-%d %H:%M:%S"))
+# print(time.strftime("%Y/%m/%d %H:%M:%S"))
 
 # import calendar
 # cal = calendar.month(2018,11)

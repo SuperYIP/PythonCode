@@ -22,4 +22,14 @@ E的左上角而无论E的朝向是怎样的，那么就方便多了。这其实
     每一行的y是不变的，每一行的x是有规律的，找x规律画
 '''
 
+from turtle import *
+def q(sides,length,Acolor):
+    color(Acolor)
+    begin_fill()
+    for i in range(0, sides):
+        forward(length)
+        right(360/sides)
+    end_fill()
+q(4,400,(255,0,0))
 
+done()

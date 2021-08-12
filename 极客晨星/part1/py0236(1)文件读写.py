@@ -2,16 +2,16 @@
 '''
 课件
 '''
-# f = open(r'C:\Users\伊海迪\Desktop\1.txt', 'r', encoding='utf-8')
-# content = f.read(5)
-# print(content)
-# content = f.read()
-# print(content)
-# f.close()
-# content = f.readline()
+f = open(r'C:\Users\伊海迪\Desktop\1.txt', 'r', encoding='utf-8')
+content = f.readline()
+print(content)
+
+
+# content = f.readlines()
 # print(content)
 # for temp in content:
 #     print(temp)
+# f.close()
 
 # 课堂练习
 # import time
@@ -28,3 +28,4 @@
 #         f.write(line + '\n')
 #     f.close()
 # writeNote()
+

@@ -29,13 +29,6 @@
 #     if (a ** 3 + b ** 3 + c ** 3) == num:
 #         print('{}是水仙花数'.format(num))
 
-# for num in range(100,1000):
-#     a = num // 100
-#     b = (num - a * 100) // 10
-#     c = num - a * 100 - b * 10
-#     if(a**3 + b**3 + c**3 == num):
-#         print('{}是水仙花数'.format(num))
-
 # 3. 输出100以内的所有素数
 # count = 0
 # for i in range(2, 101):
@@ -62,13 +55,13 @@
 # print('{}的阶乘是{}'.format(a,result))
 
 # 5.
-result = 0
-for i in range(1, 100):
-    if i % 2 == 0:
-        result -= i
-    else:
-        result += i
-print(result)
+# result = 0
+# for i in range(1, 100):
+#     if i % 2 == 0:
+#         result -= i
+#     else:
+#         result += i
+# print(result)
 
 # result = 0
 # for i in range(1, 100):

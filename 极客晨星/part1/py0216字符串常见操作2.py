@@ -15,31 +15,44 @@ strip: 删除 mystr 字符串两端的空白字符
 join:  join() 方法用于将序列中的元素以指定的字符连接生成一个新的字符串
 '''
 
-str1 = ' yihaidi python '
-print(str1.capitalize())
-print(str1.title())
-print(str1.startswith('yi'))
-print(str1.endswith('on'))
-print(str1.lower())
-print(str1.upper())
-print(str1.ljust(20))
-print(str1.rjust(20))
-print(str1.center(20))
-print(str1.lstrip())
-print(str1.rstrip())
-print(str1.strip())
-str2 = '-'
-print(str2.join(str1))
+str1 = '  hello  '
+# print(str1.capitalize())
+# print(str1.title())
+# print(str1.startswith('zhang'))
+# print(str1.endswith('zhang'))
+# print(str1.lower())
+# print(str1.upper())
+# print(str1)
+# print(str1.ljust(20))
+# print(str1.rjust(20))
+# print(str1.center(20))
+# print(str1.lstrip())
+# print(str1.rstrip())
+# print(str1.strip())
+# str2 = '-'
+# # str3 = 'python'
+# print(str2.join(str1))
 
-# 课堂练习
-var = input("请输入一个变量名：").strip()
-# 判断第一个字符是否合法
-if var[0] == "_" or var[0].isalpha():
-    for char in var[1:]: # 判断除了第一个字符之外的其他字符是否合法
-        if not (char.isalnum() or char == "_"):
-            print("变量名%s 不合法" % var)
+# # 课堂练习
+# var = input("请输入一个变量名：").strip()
+# # 判断第一个字符是否合法
+# if var[0] == "_" or var[0].isalpha():
+#     for char in var[1:]: # 判断除了第一个字符之外的其他字符是否合法
+#         if not (char.isalnum() or char == "_"):
+#             print("变量名%s 不合法" % var)
+#             break
+#     else:
+#         print("变量名%s 合法" % var)
+# else:
+#     print("变量名不合法，第一个字符错误")
+
+var = input('请输入一个变量名：').strip()
+if var[0] == '_' or var[0].isalpha():
+    for char in var[1:]:
+        if not(char.isalnum() or char =='_'):
+            print('变量名不符合规范')
             break
     else:
-        print("变量名%s 合法" % var)
+        print('变量名符合规范')
 else:
-    print("变量名不合法，第一个字符错误")
+    print('第一个字符不符合规范')
